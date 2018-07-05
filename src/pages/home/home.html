@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Home Page!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button (click)="goPagina2()">Ir a Pagina2</button>
+
+  <div class="contenedor">
+
+    <a (click)="navegarActSht()">Navegar al ActionSheet</a>
+
+    <br>
+
+    <a (click)="navegarAlert()">Navegar al Alert</a>
+
+  </div>
+
+  <button ion-button (click)="sumFolow()" (click)="OpenAlert()"><ion-icon name="logo-twitter" item-start></ion-icon>
+    Followers
+    <ion-badge item-end>{{Followers}}</ion-badge>
+  </button>
+
+</ion-content>
